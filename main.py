@@ -53,7 +53,20 @@ def print_data_info(df, fingerprints, labels):
     """打印数据信息"""
     print(f"\n📊 数据集信息:")
     print(f"  总样本数: {len(df)}")
-    print(f"  特征维度: {fingerprints.shape[1]}")
+    
+    # 处理不同类型的fingerprints数据
+    if hasattr(fingerprints, 'shape'):
+        # NumPy数组或类似对象
+        print(f"  特征维度: {fingerprints.shape[1]}")
+    elif isinstance(fingerprints, list) and len(fingerprints) > 0:
+        # 列表类型
+        if isinstance(fingerprints[0], (list, tuple)):
+            print(f"  特征维度: {len(fingerprints[0])}")
+        else:
+            print(f"  特征维度: 未知 (一维数据)")
+    else:
+        print(f"  特征维度: 未知")
+    
     print(f"  活性化合物: {sum(labels)} ({sum(labels)/len(labels)*100:.1f}%)")
     print(f"  非活性化合物: {len(labels)-sum(labels)} ({(len(labels)-sum(labels))/len(labels)*100:.1f}%)")
 

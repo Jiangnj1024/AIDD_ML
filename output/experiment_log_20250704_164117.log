@@ -1,0 +1,32 @@
+2025-07-04 16:41:17,934 - INFO - 开始执行分子活性预测机器学习项目
+2025-07-04 16:41:17,935 - INFO - 开始数据加载和预处理
+2025-07-04 16:41:18,076 - INFO - 准备模型数据
+2025-07-04 16:41:18,077 - INFO - 拆分训练集和测试集
+2025-07-04 16:41:18,079 - INFO - 创建机器学习模型
+2025-07-04 16:41:18,079 - INFO - 开始模型训练和验证
+2025-07-04 16:41:18,079 - INFO - 训练模型: Random Forest
+2025-07-04 16:41:18,742 - INFO - 训练模型: Support Vector Machine
+2025-07-04 16:41:25,110 - INFO - 训练模型: Artificial Neural Network
+2025-07-04 16:41:26,537 - INFO - 训练模型: Gradient Boosting
+2025-07-04 16:41:27,766 - INFO - 训练模型: AdaBoost
+2025-07-04 16:41:28,194 - INFO - 训练模型: Logistic Regression
+2025-07-04 16:41:28,260 - INFO - 训练模型: K-Nearest Neighbors
+2025-07-04 16:41:28,463 - INFO - 训练模型: Naive Bayes
+2025-07-04 16:41:28,483 - INFO - 训练模型: Decision Tree
+2025-07-04 16:41:28,533 - INFO - 训练模型: Linear Discriminant Analysis
+2025-07-04 16:41:28,602 - INFO - 训练模型: Extra Trees
+2025-07-04 16:41:29,105 - INFO - 开始交叉验证
+2025-07-04 16:41:29,105 - INFO - 交叉验证: Random Forest
+2025-07-04 16:41:30,741 - INFO - 交叉验证: Support Vector Machine
+2025-07-04 16:41:45,394 - INFO - 交叉验证: Artificial Neural Network
+2025-07-04 16:41:48,949 - INFO - 交叉验证: Gradient Boosting
+2025-07-04 16:41:51,985 - INFO - 交叉验证: AdaBoost
+2025-07-04 16:41:53,127 - INFO - 交叉验证: Logistic Regression
+2025-07-04 16:41:53,291 - INFO - 交叉验证: K-Nearest Neighbors
+2025-07-04 16:41:54,040 - INFO - 交叉验证: Naive Bayes
+2025-07-04 16:41:54,108 - INFO - 交叉验证: Decision Tree
+2025-07-04 16:41:54,237 - INFO - 交叉验证: Linear Discriminant Analysis
+2025-07-04 16:41:54,372 - INFO - 交叉验证: Extra Trees
+2025-07-04 16:41:55,658 - INFO - 生成可视化图表
+2025-07-04 16:41:56,679 - INFO - 生成项目总结
+2025-07-04 16:41:56,680 - INFO - 项目执行完成，总耗时: 38.75 秒
