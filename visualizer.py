@@ -47,15 +47,15 @@ class Visualizer:
             auc = roc_auc_score(test_y, test_prob)
             
             # 绘制ROC曲线
-            ax.plot(fpr, tpr, label=f"{label} AUC面积 = {auc:.2f}", linewidth=2)
+            ax.plot(fpr, tpr, label=f"{label} AUC = {auc:.2f}", linewidth=2)
         
         # 绘制对角线（随机分类器基准线）
-        ax.plot([0, 1], [0, 1], "r--", linewidth=1, label="随机分类器")
+        ax.plot([0, 1], [0, 1], "r--", linewidth=1, label="Random Classifier")
         
         # 设置图表属性
-        ax.set_xlabel("假正例率 (FPR)", fontsize=12)
-        ax.set_ylabel("真正例率 (TPR)", fontsize=12)
-        ax.set_title("ROC曲线对比", fontsize=14, fontweight='bold')
+        ax.set_xlabel("FPR", fontsize=12)
+        ax.set_ylabel("TPR", fontsize=12)
+        ax.set_title("ROC", fontsize=14, fontweight='bold')
         ax.legend(loc="lower right", fontsize=10)
         ax.grid(True, alpha=0.3)
         
@@ -102,9 +102,9 @@ class Visualizer:
             ax.bar([pos + width * i for pos in x], values, width, label=metric)
         
         # 设置图表属性
-        ax.set_xlabel('模型', fontsize=12)
-        ax.set_ylabel('性能指标', fontsize=12)
-        ax.set_title('模型性能对比', fontsize=14, fontweight='bold')
+        ax.set_xlabel('Model', fontsize=12)
+        ax.set_ylabel('Performance Metrics', fontsize=12)
+        ax.set_title('Model Performance Comparison', fontsize=14, fontweight='bold')
         ax.set_xticks([pos + width * 1.5 for pos in x])
         ax.set_xticklabels(models)
         ax.legend()
